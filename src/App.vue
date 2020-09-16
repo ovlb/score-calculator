@@ -1,19 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <risk-calculator :questions="sample" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import RiskCalculator from './components/RiskCalculator.vue'
+import questions from '@/data/questions.json'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld
+    RiskCalculator
+  },
+  data() {
+    return {
+      sample: questions
+    }
   }
-};
+}
 </script>
 
 <style>

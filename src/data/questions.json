@@ -1,0 +1,63 @@
+[
+  {
+    "id": 2323,
+    "title": "calculator_question_1",
+    "answers": [
+      { "text": "≥10", "score": 7 },
+      { "text": "6–9", "score": 4 },
+      { "text": "0–5", "score": 0 }
+    ]
+  },
+  {
+    "id": 12323431,
+    "title": "calculator_question_2",
+    "answers": [
+      { "text": "≥2", "score": 10 },
+      { "text": "1", "score": 5 },
+      { "text": "0", "score": 0 }
+    ]
+  },
+  {
+    "id": 2342242452,
+    "title": "calculator_question_4",
+    "answers": [
+      { "text": "≥5", "score": 10 },
+      { "text": "2–4", "score": 5 },
+      { "text": "0–1", "score": 0 }
+    ]
+  },
+  {
+    "id": 124521,
+    "title": "calculator_question_5",
+    "answers": [
+      { "text": "≥2", "score": 10 },
+      { "text": "1", "score": 5 },
+      { "text": "n/a", "score": 0 }
+    ],
+    "footnote": "Skip the question of no anal infection"
+  },
+  {
+    "id": 241941,
+    "title": "calculator_question_6",
+    "answers": [
+      { "text": "ja", "score": 10 },
+      { "text": "nein", "score": 0 }
+    ]
+  },
+  {
+    "id": 241,
+    "title": "calculator_question_7",
+    "answers": [
+      { "text": "ja", "score": 6 },
+      { "text": "nein", "score": 0 }
+    ]
+  },
+  {
+    "id": 82014,
+    "title": "calculator_question_8",
+    "answers": [
+      { "text": "ja", "score": 10 },
+      { "text": "nein", "score": 0 }
+    ]
+  }
+]
