@@ -1,6 +1,6 @@
 {
   "name": "@ovl/score-calculator",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A Vue component to calculate a score based on answers to questions",
   "license": "MIT",
   "repository": "ovlb/score-calculator",
