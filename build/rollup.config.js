@@ -10,6 +10,8 @@ import { terser } from 'rollup-plugin-terser'
 import del from 'rollup-plugin-delete'
 import minimist from 'minimist'
 
+const name = 'ScoreCalculator'
+
 // Get browserslist config and remove ie from es build targets
 const esbrowserslist = fs
   .readFileSync('./.browserslistrc')
@@ -75,7 +77,8 @@ if (!argv.format || argv.format === 'es') {
     output: {
       file: 'dist/score-calculator.esm.js',
       format: 'esm',
-      exports: 'named'
+      exports: 'named',
+      name
     },
     plugins: [
       del({ targets: 'dist/*' }),
@@ -110,7 +113,7 @@ if (!argv.format || argv.format === 'cjs') {
       compact: true,
       file: 'dist/score-calculator.ssr.js',
       format: 'cjs',
-      name: 'ScoreCalculator',
+      name,
       exports: 'named',
       globals
     },
@@ -139,7 +142,7 @@ if (!argv.format || argv.format === 'iife') {
       compact: true,
       file: 'dist/score-calculator.min.js',
       format: 'iife',
-      name: 'ScoreCalculator',
+      name,
       exports: 'named',
       globals
     },
