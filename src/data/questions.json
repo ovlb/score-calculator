@@ -1,16 +1,16 @@
 [
   {
     "id": 2323,
-    "title": "calculator_question_1",
+    "title": "How many night do you sleep in a regular week?",
     "answers": [
-      { "text": "≥10", "score": 7 },
-      { "text": "6–9", "score": 4 },
+      { "text": "≥8", "score": 3 },
+      { "text": "6–7", "score": 2 },
       { "text": "0–5", "score": 0 }
     ]
   },
   {
     "id": 12323431,
-    "title": "calculator_question_2",
+    "title": "How many Tour de France stages have you won?",
     "answers": [
       { "text": "≥2", "score": 10 },
       { "text": "1", "score": 5 },
@@ -19,42 +19,25 @@
   },
   {
     "id": 2342242452,
-    "title": "calculator_question_4",
+    "title": "Do you like cheese or meat better?",
     "answers": [
-      { "text": "≥5", "score": 10 },
-      { "text": "2–4", "score": 5 },
-      { "text": "0–1", "score": 0 }
+      { "text": "Cheese", "score": 10 },
+      { "text": "Meat", "score": -5 }
     ]
   },
   {
     "id": 124521,
-    "title": "calculator_question_5",
+    "title": "Do you breathe daily?",
     "answers": [
-      { "text": "≥2", "score": 10 },
-      { "text": "1", "score": 5 },
+      { "text": "Yes", "score": 10 },
+      { "text": "No", "score": -100 },
       { "text": "n/a", "score": 0 }
     ],
-    "footnote": "Skip the question of no anal infection"
+    "footnote": "You might be dead if you choose no."
   },
   {
     "id": 241941,
     "title": "calculator_question_6",
-    "answers": [
-      { "text": "ja", "score": 10 },
-      { "text": "nein", "score": 0 }
-    ]
-  },
-  {
-    "id": 241,
-    "title": "calculator_question_7",
-    "answers": [
-      { "text": "ja", "score": 6 },
-      { "text": "nein", "score": 0 }
-    ]
-  },
-  {
-    "id": 82014,
-    "title": "calculator_question_8",
     "answers": [
       { "text": "ja", "score": 10 },
       { "text": "nein", "score": 0 }
