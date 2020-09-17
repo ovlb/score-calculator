@@ -1,28 +1,28 @@
 <template>
-  <div class="risk-calculator">
-    <risk-calculator-question-group
+  <div class="score-calculator">
+    <score-calculator-question-group
       v-for="question in questions"
       :key="question.id"
       :data="question"
       @answerClicked="onAnswerClick"
     />
-    <div class="risk-calculator__score-container">
+    <div class="score-calculator__score-container">
       <button data-test="button-emit" @click="emitScore">
         {{ buttonText }}
       </button>
     </div>
-    <footer class="risk-calculator__footer">
+    <footer class="score-calculator__footer">
       <slot name="footerText" />
     </footer>
   </div>
 </template>
 
 <script>
-import RiskCalculatorQuestionGroup from './RiskCalculatorQuestionGroup.vue'
+import ScoreCalculatorQuestionGroup from './ScoreCalculatorQuestionGroup.vue'
 
 export default {
   components: {
-    RiskCalculatorQuestionGroup
+    ScoreCalculatorQuestionGroup
   },
   data() {
     return {

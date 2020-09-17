@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import RiskCalculator from '../RiskCalculator.vue'
+import ScoreCalculator from '../ScoreCalculator.vue'
 import questions from '@/data/questions.json'
 
 const buttonText = 'Test result'
@@ -14,12 +14,12 @@ const factory = (options = {}) => {
     questionsOptional: options.questionsOptional || false
   }
 
-  return shallowMount(RiskCalculator, {
+  return shallowMount(ScoreCalculator, {
     propsData
   })
 }
 
-describe('RiskCalculator.vue', () => {
+describe('ScoreCalculator.vue', () => {
   it('allows to set the button text', () => {
     const wrapper = factory()
 
@@ -73,7 +73,9 @@ describe('RiskCalculator.vue', () => {
 
       $btn.trigger('click')
 
-      expect(wrapper.emitted('scoreResult')[0]).toStrictEqual([14])
+      expect(wrapper.emitted('scoreResult')[0]).toStrictEqual([
+        questions.length * 2
+      ])
     })
   })
 })

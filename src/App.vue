@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <risk-calculator :questions="sample" />
+    <score-calculator :questions="sample" />
   </div>
 </template>
 
 <script>
-import RiskCalculator from './components/RiskCalculator.vue'
+import ScoreCalculator from './components/ScoreCalculator.vue'
 import questions from '@/data/questions.json'
 
 export default {
   name: 'App',
   components: {
-    RiskCalculator
+    ScoreCalculator
   },
   data() {
     return {

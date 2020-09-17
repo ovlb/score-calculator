@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'risk-calculator-question-group',
+  name: 'score-calculator-question-group',
   data() {
     return {
       score: null
