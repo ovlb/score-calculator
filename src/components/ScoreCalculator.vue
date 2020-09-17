@@ -61,7 +61,11 @@ export default {
   methods: {
     emitScore() {
       if (!this.hasAllAnswers && !this.questionsOptional) {
-        this.$emit('missingQuestions')
+        const missing = this.questions.filter(
+          (question) =>
+            !Object.prototype.hasOwnProperty.call(question, 'activeScore')
+        )
+        this.$emit('missingQuestions', missing)
 
         return
       }
