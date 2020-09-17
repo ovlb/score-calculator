@@ -1,12 +1,12 @@
 // Import vue component
-import component from '@/components/ScoreCalculator.vue'
+import ScoreCalculator from '@/components/ScoreCalculator.vue'
 
 // install function executed by Vue.use()
 const install = function installScoreCalculator(Vue) {
   if (install.installed) return
 
   install.installed = true
-  Vue.component('ScoreCalculator', component)
+  Vue.component('ScoreCalculator', ScoreCalculator)
 }
 
 // Create module definition for Vue.use()
@@ -33,7 +33,7 @@ if ('false' === process.env.ES_BUILD) {
 
 // Inject install function into component - allows component
 // to be registered via Vue.use() as well as Vue.component()
-component.install = install
+ScoreCalculator.install = install
 
 // Export component by default
-export default component
+export default ScoreCalculator

@@ -27,7 +27,6 @@ export default {
   data() {
     return {
       showsScore: false
-      // accumulatedScore: null,
     }
   },
   props: {
